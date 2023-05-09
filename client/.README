@@ -1,0 +1,32 @@
+STEP# 1:
+create (2) new folders
+- (1) client
+- (2) smart_contract
+STEP# 2:
+cd client
+STEP# 3:
+npm install vite@latest
+STEP# 4:
+npm install
+STEP# 5:
+open tailwind.config.js file, delete and add the following
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+STEP# 6: 
+npm install -D tailwindcss postcss autoprefixer
+STEP# 7:
+npx tailwindcss init -p
+STEP# 8:
+delete all and add the following to index.css file
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+STEP# 9:
+npm install react-icons ethers 
